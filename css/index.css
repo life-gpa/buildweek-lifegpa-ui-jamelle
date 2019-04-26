@@ -316,15 +316,22 @@ html,
 body {
   font-family: 'Lato', sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'roboto', sans-serif;
-}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
+a {
+  text-decoration-line: none;
+  color: #a0001e;
+}
+@media (min-width: 1000px) {
+  a:hover {
+    text-decoration-line: underline;
+  }
+}
+/* BreakPoints 
+Super helpful: https://medium.com/beginners-guide-to-mobile-web-development/media-queries-54a1a463356f
+*/
+/* Color Assignments */
+/* Colors */
