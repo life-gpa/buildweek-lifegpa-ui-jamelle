@@ -48,7 +48,7 @@ a {
 
 ul { list-style: circle inside; }
 ol { list-style: decimal inside; }
-li { margin-bottom: 1rem; list-style-type: none; }
+li { margin-bottom: .5rem; list-style-type: none; }
 ol, ul { padding-left: 0; margin-top: 0; }
 
 ul ul,
@@ -56,10 +56,28 @@ ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; 
+  font-size: 90%;
 }
 
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box; 
+  margin-top: 1em;
+}
+
+/* Find a home for respnsive button, also use something better
+ * than an ID
+*/
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 2em;
+  margin-top: 1em;
+
+  @media @tablet {
+    padding: 0 10rem;
+    // margin: 0 1em;
+  }
 }
