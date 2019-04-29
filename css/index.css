@@ -322,21 +322,20 @@ body {
 }
 .container {
   max-width: 100%;
-  width: 375px;
+  width: 335px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 @media (min-width: 750px) {
   .container {
     max-width: 100%;
-    width: 750px;
+    width: 650px;
     margin: 0 auto;
   }
 }
 @media (min-width: 1000px) {
   .container {
     max-width: 100%;
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
   }
 }
@@ -393,10 +392,34 @@ a {
     text-decoration-line: underline;
   }
 }
+ul {
+  list-style: circle inside;
+}
+ol {
+  list-style: decimal inside;
+}
+li {
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 /* Global Mixins */
-/* BreakPoints 
-Super helpful: https://medium.com/beginners-guide-to-mobile-web-development/media-queries-54a1a463356f
-*/
+/* BreakPoints */
 /* Color Assignments */
 /* Colors */
 /* Home Page Design */
@@ -481,4 +504,38 @@ input[type="button"].button-primary:focus {
   color: #a0001e;
   background-color: #f3f3f3;
   border-color: #a0001e;
+}
+/* Forms */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #a0001e;
+  outline: 0;
 }
