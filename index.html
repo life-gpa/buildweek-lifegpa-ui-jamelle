@@ -5,58 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LifeGPA</title>
-  <!-- Stylesheets -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/index.css">
   <!-- Scripts -->
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
   <!-- container -->
-  <div class="container">
+  <div class="container home">
     <!-- Header -->
     <Header>
       <!-- Navigation Bar -->
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Team</li>
-          <li>Contact</li>
+          <a href="index.html" id="logo">LifeGPA</a>
+          <a href="about.html">About</a>
+          <a href="team.html">Team</a>
+          <a href="#contact">Contact</a>
         </ul>
       </nav>
     </Header>
   
     <!-- Intro -->
-    <section class="intro">
+    <main class="intro">
       <div class="logo">
+        <img src="img/undraw_thinking0.png" alt="Person thinking about life" class="u-max-full-width">
         <h1>LifeGPA</h1>
-        <p>If you gave your life a grade right now...what would it be?</p>
+        <p>If you gave your life a grade right now..</p>
+        <p>what would it be?</p>
       </div>
-    </section>
+    </main>
   
     <!-- Call To Action -->
-    <button>Log In</button>
-  
-    <button>Sign Up</button>
+    <div id="buttons">
+      <button class="button">Sign Up</button>
+      <button class="button button-primary">Log In</button>
+    </div>
   
     <!-- Section -->
-    <section>
-      <a href="https://play.google.com/store/apps/details?id=com.transferwise.android" target="_blank">
-        <img src="" alt="Google Play Logo">
-        <div class="btn-download-inner"><span>Get it on</span><span>Google Play</span>
-        </div>
-      </a>
-    </section>
   
+
+
+
     <!-- Image -->
-    <img src="" alt="Person thinking about life">
+    <img src="img/undraw_thinking.png" alt="Person thinking about life" class="u-max-full-width">
   
     <!-- Contact -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <header>
-        <h3>Let Us Know What You Think!</h3>
-        <p>Use the form below to drop us an e-mail. You've got some questions and we've got tons and tons of answers. Ask us about new features we plan to roll out, when your subscription ends, what you should name your new puppy--anything we can help with! We promise we're really nice.</p>
+        <!-- <h3>Let Us Know What You Think!</h3> -->
+        <p>Use the form below to drop us an e-mail! You've got some questions and we've got tons and tons of answers. Ask us about new features we plan to roll out, when your subscription ends, what you should name your new puppy--anything we can help with! We promise we're really nice.</p>
       </header>
       <form class="contact-form" method="post" action="#">
         <div>
@@ -71,8 +72,8 @@
           </div>
           <div>
             <ul class="actions">
-              <li><input type="submit" class="style1" value="Send"></li>
-              <li><input type="reset" class="style2" value="Clear"></li>
+              <li><input type="submit" class="button-primary" value="Submit"></li>
+              <li><input type="reset" class="button" value="Reset"></li>
             </ul>
           </div>
         </div>
@@ -85,7 +86,10 @@
           <div>
             <div>
               <section>
-                <h3>Address</h3>
+                <span class="fa-stack">
+                  <i class="fa fa-circle fa-stack-2x">Address</i>
+                  <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                </span>
                 <p>
                   LifeGPA LLC<br>
                   1690 Getter Lane<br>
@@ -95,7 +99,10 @@
             </div>
             <div>
               <section>
-                <h3>Social</h3>
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x">Social</i>
+                  <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                </span>
                 <p>
                   <a href="#">@LifeGPA</a><br>
                   <a href="#">linkedin.com/LifeGPA</a><br>
@@ -105,7 +112,10 @@
             </div>
             <div>
               <section>
-                <h3>Email</h3>
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x">Email</i>
+                  <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
                 <p>
                   <a href="#">info@lifegpa.com</a>
                 </p>
@@ -113,7 +123,10 @@
             </div>
             <div>
               <section>
-                <h3>Phone</h3>
+                <span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x">Phone</i>
+                  <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
                 <p>
                   (704) 555-3242
                 </p>
