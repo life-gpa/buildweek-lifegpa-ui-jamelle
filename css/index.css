@@ -304,15 +304,12 @@ template {
 [hidden] {
   display: none;
 }
+/* HTML */
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
 }
 html,
 body {
@@ -321,9 +318,10 @@ body {
   line-height: 1.6;
   font-weight: 400;
 }
+/* Container */
 .container {
-  max-width: 100%;
-  width: 900px;
+  max-width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
@@ -334,25 +332,84 @@ body {
   display: table;
   clear: both;
 }
+@media (min-width: 550px) {
+  .container {
+    max-width: 100%;
+    width: 85%;
+    padding: 0;
+  }
+}
 @media (min-width: 750px) {
   .container {
     max-width: 100%;
-    width: 650px;
-    margin: 0 auto;
+    width: 80%;
   }
 }
-@media (min-width: 1000px) {
-  .container {
-    max-width: 100%;
-    width: 900px;
-    margin: 0 auto;
-  }
-}
-.column {
+/* Columns */
+.column,
+.columns {
   width: 100%;
   float: left;
   box-sizing: border-box;
 }
+@media (min-width: 550px) {
+  .column,
+  .columns {
+    margin-left: 4%;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+  .one.column,
+  .one.columns {
+    width: 4.66666667%;
+  }
+  .two.columns {
+    width: 13.33333333%;
+  }
+  .three.columns {
+    width: 22%;
+  }
+  .four.columns {
+    width: 30.66666667%;
+  }
+  .five.columns {
+    width: 39.33333333%;
+  }
+  .six.columns {
+    width: 48%;
+  }
+  .seven.columns {
+    width: 56.66666667%;
+  }
+  .eight.columns {
+    width: 65.33333333%;
+  }
+  .nine.columns {
+    width: 74%;
+  }
+  .ten.columns {
+    width: 82.66666667%;
+  }
+  .eleven.columns {
+    width: 91.33333333%;
+  }
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+  .one-third.column {
+    width: 30.66666667%;
+  }
+  .two-thirds.column {
+    width: 65.33333333%;
+  }
+  .one-half.column {
+    width: 48%;
+  }
+}
+/* Headers */
 h1,
 h2,
 h3,
@@ -380,7 +437,7 @@ h4 {
   line-height: 1.2;
   letter-spacing: -0.05rem;
 }
-@media (min-width: 750px), (min-width: 1000px) {
+@media (min-width: 550px), (min-width: 750px) {
   h1 {
     font-size: 2.8rem;
   }
@@ -397,6 +454,12 @@ h4 {
     font-size: 1.5rem;
   }
 }
+/* Paragraphs */
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+/* Anchors */
 a {
   text-decoration-line: none;
   color: #a0001e;
@@ -404,6 +467,7 @@ a {
 a:hover {
   text-decoration-line: underline;
 }
+/* Lists */
 ul {
   list-style: circle inside;
 }
@@ -421,7 +485,6 @@ ul {
 }
 ul ul,
 ul ol,
-ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
@@ -434,18 +497,6 @@ ol ul {
 /* Find a home for respnsive button, also use something better
  * than an ID
 */
-#buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0 2em;
-  margin-top: 1em;
-}
-@media (min-width: 750px) {
-  #buttons {
-    padding: 0 10rem;
-  }
-}
 /* Global Mixins */
 /* BreakPoints */
 /* Primary Colors */
@@ -454,12 +505,6 @@ ol ul {
 /* Home Page Design */
 .home {
   /* Main (mobile-first design) */
-}
-.home main .logo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
 }
 .home main h1 {
   color: #464646;
@@ -471,20 +516,6 @@ ol ul {
   color: #464646;
 }
 /* Header (mobile-first design) */
-header {
-  /* Header Navigation Bar (mobile-first design) */
-  /* Header Unordered List(mobile-first design) */
-  /* Header List Items (mobile-first design) */
-}
-header nav {
-  margin: 0.8em 0;
-}
-header ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: unset;
-}
 /* Button Styling */
 .button,
 input[type="submit"] {
