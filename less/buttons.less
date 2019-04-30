@@ -1,14 +1,12 @@
 /* Button Styling */
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+.button, input[type="submit"] {
+  color: @primary-red;
+  background-color: @primary-white;
+  border: 1px solid @light-grey-red;
   display: inline-block;
   height: 42px;
   padding: 0 30px;
-  color: @primary-red;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -17,49 +15,37 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: @primary-white;
   border-radius: 4px;
-  border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; 
+
+    &:hover, &:focus {
+      color: @very-dark-grey;
+      border-color: @primary-red;
+      outline: 0; 
+    }
 }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #333;
-  border-color: @primary-red;
-  outline: 0; 
-}
-
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  color: #FFF;
+.button-primary, input[type="submit"] {
+  color: @primary-white;
   background-color: @primary-red;
   border-color: @primary-red; 
+
+  &:hover, &:focus {
+    color: @primary-red;
+    background-color: @off-white;
+    border-color: @primary-red;
+  }
 }
 
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-  color: @primary-red;
-  background-color: @off-white;
-  border-color: @primary-red; 
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 2em;
+  margin-top: 2em;
+
+  @media @tablet {
+    padding: 0 10rem;
+  }
 }
