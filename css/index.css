@@ -312,6 +312,7 @@ html {
 }
 p {
   margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 html,
 body {
@@ -322,8 +323,16 @@ body {
 }
 .container {
   max-width: 100%;
-  width: 335px;
+  width: 900px;
   margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 @media (min-width: 750px) {
   .container {
@@ -338,6 +347,11 @@ body {
     width: 900px;
     margin: 0 auto;
   }
+}
+.column {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -387,10 +401,8 @@ a {
   text-decoration-line: none;
   color: #a0001e;
 }
-@media (min-width: 1000px) {
-  a:hover {
-    text-decoration-line: underline;
-  }
+a:hover {
+  text-decoration-line: underline;
 }
 ul {
   list-style: circle inside;
@@ -436,7 +448,8 @@ ol ul {
 }
 /* Global Mixins */
 /* BreakPoints */
-/* Color Assignments */
+/* Primary Colors */
+/* Button Colors */
 /* Colors */
 /* Home Page Design */
 .home {
@@ -474,14 +487,13 @@ header ul {
 }
 /* Button Styling */
 .button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type="submit"] {
+  color: #a0001e;
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
   display: inline-block;
   height: 42px;
   padding: 0 30px;
-  color: #a0001e;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -490,45 +502,28 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #ffffff;
   border-radius: 4px;
-  border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
 }
 .button:hover,
-button:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
 .button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #333;
+input[type="submit"]:focus {
+  color: #333333;
   border-color: #a0001e;
   outline: 0;
 }
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  color: #FFF;
+.button-primary,
+input[type="submit"] {
+  color: #ffffff;
   background-color: #a0001e;
   border-color: #a0001e;
 }
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
+.button-primary:hover,
+input[type="submit"]:hover,
+.button-primary:focus,
+input[type="submit"]:focus {
   color: #a0001e;
   background-color: #f3f3f3;
   border-color: #a0001e;
