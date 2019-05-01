@@ -14,25 +14,24 @@
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <!-- container -->
-  <div class="container home">
     <!-- Header -->
     <Header>
       <!-- Navigation Bar -->
-      <nav>
-        <ul>
+      <nav class="navBar" id="mainNavBar">
           <a href="index.html" id="logo">LifeGPA</a>
           <a href="about.html">About</a>
           <a href="team.html">Team</a>
           <a href="contact.html">Contact</a>
-        </ul>
+          <a href="javascript:void(0);" class="icon" onclick="openDrawerMenu()">&#9776</a>
       </nav>
     </Header>
   
+  <!-- container -->
+  <div class="container home">
     <!-- Intro -->
     <main class="intro">
       <div class="logo">
-        <img src="img/undraw_thinking0.png" alt="Person thinking about life" class="u-max-full-width">
+        <img src="img/undraw_thinking0.png" alt="Person thinking about life">
         <h1>LifeGPA</h1>
         <p>If you gave your life a grade right now..</p>
         <p>what would it be?</p>

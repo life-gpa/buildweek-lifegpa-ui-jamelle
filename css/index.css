@@ -313,6 +313,11 @@ html {
 p {
   margin-top: 0;
 }
+img {
+  max-width: 60%;
+  box-sizing: border-box;
+  margin-top: 1em;
+}
 html,
 body {
   font-family: 'Lato', sans-serif;
@@ -324,11 +329,12 @@ body {
   max-width: 100%;
   width: 335px;
   margin: 0 auto;
+  color: #464646;
 }
-@media (min-width: 750px) {
+@media (min-width: 625px) {
   .container {
     max-width: 100%;
-    width: 600px;
+    width: 650px;
     margin: 0 auto;
   }
 }
@@ -366,7 +372,7 @@ h4 {
   line-height: 1.2;
   letter-spacing: -0.05rem;
 }
-@media (min-width: 750px), (min-width: 1000px) {
+@media (min-width: 625px), (min-width: 1000px) {
   h1 {
     font-size: 2.8rem;
   }
@@ -414,12 +420,21 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
 }
-.u-max-full-width {
-  max-width: 60%;
-  box-sizing: border-box;
-  margin-top: 1em;
+.team {
+  margin-top: 2rem;
 }
-/* Global Mixins */
+.team:first-child {
+  color: #a0001e;
+}
+.team .content-section {
+  margin-top: 3rem;
+  color: #464646;
+}
+.team .content-section h2 {
+  margin-bottom: unset;
+}
+/* Flex node*/
+/* Use full width */
 /* BreakPoints */
 /* Color Assignments */
 /* Colors */
@@ -443,19 +458,61 @@ ol ul {
   color: #464646;
 }
 /* Header (mobile-first design) */
-header {
-  /* Header Navigation Bar (mobile-first design) */
-  /* Header Unordered List(mobile-first design) */
-  /* Header List Items (mobile-first design) */
+/* Header Navigation Bar (mobile-first design) */
+/* Header Unordered List(mobile-first design) */
+/* Header List Items (mobile-first design) */
+.navBar {
+  background-color: #a0001e;
+  overflow: hidden;
 }
-header nav {
-  margin: 0.8em 0;
+@media (min-width: 625px) {
+  .navBar {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
-header ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: unset;
+.navBar a {
+  float: left;
+  color: #ffffff;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+.navBar a:hover,
+.navBar a:active {
+  background-color: #ffffff;
+  color: #a0001e;
+}
+.navBar a:not(:first-child) {
+  display: none;
+}
+@media (min-width: 625px) {
+  .navBar a:not(:first-child) {
+    display: inherit;
+  }
+}
+.navBar a.icon {
+  display: block;
+  float: right;
+}
+@media (min-width: 625px) {
+  .navBar a.icon {
+    display: none;
+  }
+}
+.navBar.responsive {
+  position: relative;
+}
+.navBar.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navBar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
 }
 /* Button Styling */
 .button,
@@ -507,7 +564,7 @@ input[type="submit"]:focus {
   padding: 0 2em;
   margin-top: 2em;
 }
-@media (min-width: 750px) {
+@media (min-width: 625px) {
   #buttons {
     padding: 0 10rem;
   }
@@ -551,6 +608,9 @@ footer {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+  border-top: 1px groove #464646;
+  padding-top: 25px;
+  font-size: smaller;
 }
 footer div {
   display: flex;
@@ -566,12 +626,7 @@ footer div p a {
   display: contents;
   color: #464646;
 }
-@media (min-width: 750px) {
-  #footer-phone {
-    display: none;
-  }
-}
-@media (min-width: 1000px), (min-width: 750px) {
+@media (min-width: 1000px), (min-width: 625px) {
   footer {
     margin-top: 100px;
     width: unset;
@@ -598,5 +653,10 @@ footer div p a {
 @media (min-width: 1000px) {
   #footer-phone {
     display: initial;
+  }
+}
+@media (min-width: 625px) {
+  #footer-phone {
+    display: none;
   }
 }

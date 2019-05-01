@@ -1,40 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About - LifeGPA</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/index.css">
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
-  <div class="container">
-    <Header>
-      <nav>
-        <ul>
-          <a href="index.html" id="logo">LifeGPA</a>
-          <a href="about.html">About</a>
-          <a href="team.html">Team</a>
-          <a href="contact.html">Contact</a>
-        </ul>
-      </nav>
-    </Header>
-    <main class="">
+
+  <!-- Header -->
+  <Header>
+    <!-- Navigation Bar -->
+    <nav class="navBar" id="mainNavBar">
+      <a href="index.html" id="logo">LifeGPA</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="openDrawerMenu()">&#9776</a>
+    </nav>
+  </Header>
+
+  <div class="container about">
+    <main>
       <section>
-        <img src="img/undraw_about.png" alt="Person wondering about LifeGPA" class="u-max-full-width">
+        <img src="img/undraw_about.png" alt="Person wondering about LifeGPA">
         <h3 class="">How does LifeGPA work?</h3>
-        <p class="">In the same way that your professors and instructors give you a grade to evaluate your progress or success in their course, LifeGPA similarly uses a score to evaluate your success during the entirety of your life thus far.</p>
+        <p class="">In the same way that your professors and instructors give you a grade to evaluate your progress or
+          success in their course, LifeGPA similarly uses a score to evaluate your success during the entirety of your
+          life thus far.</p>
       </section>
       <section>
         <h3 class="">OK, great--how do you guys get that score??</h3>
-        <p class="">Your LifeGPA is a number that shows the level of achievement you reached in any given focus area throughout the year. Your LifeGPA scores can go up and down over time and will change according to how much you improve your overall level of achievement (or, in some cases, how much you fell behind).</p>
+        <p class="">Your LifeGPA is a number that shows the level of achievement you reached in any given focus area
+          throughout the year. Your LifeGPA scores can go up and down over time and will change according to how much
+          you improve your overall level of achievement (or, in some cases, how much you fell behind).</p>
       </section>
       <section>
         <h3 class="">How do I keep a high LifeGPA?</h3>
-        <p class="">Maintaining a high LifeGPA isn’t always easy; and if you start with a low LifeGPA at the beginning of your life, it is much harder to raise your LifeGPA later on (thanks, social constructs).</p> 
-        <p>Your LifeGPA will change and vary throughout the years; but having in mind what your LifeGPA is every year will give you a good indication of how well you are doing in your life overall (and perhaps, whether you need to improve).</p>
+        <p class="">Maintaining a high LifeGPA isn’t always easy; and if you start with a low LifeGPA at the beginning
+          of your life, it is much harder to raise your LifeGPA later on (thanks, social constructs).</p>
+        <p>Your LifeGPA will change and vary throughout the years; but having in mind what your LifeGPA is every year
+          will give you a good indication of how well you are doing in your life overall (and perhaps, whether you need
+          to improve).</p>
       </section>
     </main>
+
+        <!-- Footer -->
+    <footer>
+      <section>
+        <div>
+          <section id="footer-adress">
+            <span class="fa-stack fa-sm">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              LifeGPA LLC<br>
+              1690 Getter Lane<br>
+              Charlotte, NC 28202
+            </p>
+          </section>
+        </div>
+        <div>
+          <section>
+            <span class="fa-stack fa-sm">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              <a href="#">@LifeGPA</a><br>
+              <a href="#">linkedin.com/LifeGPA</a><br>
+              <a href="#">facebook.com/LifeGPA</a>
+            </p>
+          </section>
+        </div>
+        <div>
+          <section>
+            <span class="fa-stack fa-sm">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              <a href="#">info@lifegpa.com</a>
+            </p>
+          </section>
+        </div>
+        <div>
+          <section id="footer-phone">
+            <span class="fa-stack fa-sm">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              (704) 555-3242
+            </p>
+          </section>
+        </div>
+      </section>
+    </footer>
   </div>
 </body>
+
 </html>

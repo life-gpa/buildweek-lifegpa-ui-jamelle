@@ -3,11 +3,13 @@ footer {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+  border-top: 1px groove @primary-grey;
+  padding-top: 25px;
+  font-size: smaller;
 
   div {
     .flex(flex-start; center);
     flex-direction: column;
-    // margin: 1em;
     color: @primary-grey;
 
     p {
@@ -21,12 +23,6 @@ footer {
   }
 }
 
-@media @tablet {
-  
-  #footer-phone {
-    display: none;
-  }
-}
 
 @media @desktop, @tablet {
   footer {
@@ -56,5 +52,12 @@ footer {
   
   #footer-phone {
     display: initial;
+  }
+}
+
+@media @tablet {
+  
+  #footer-phone {
+    display: none;
   }
 }
