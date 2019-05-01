@@ -1,64 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Team - LifeGPA</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/index.css">
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
 </head>
+
 <body>
-  <div class="container">
-    <Header>
-      <nav>
-        <ul>
-          <a href="index.html" id="logo">LifeGPA</a>
-          <a href="about.html">About</a>
-          <a href="team.html">Team</a>
-          <a href="index.html#contact">Contact</a>
-        </ul>
-      </nav>
-    </Header>
+  <!-- Header -->
+  <Header>
+    <!-- Navigation Bar -->
+    <nav class="navBar" id="mainNavBar">
+      <a href="index.html" id="logo">LifeGPA</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="openDrawerMenu()">&#9776</a>
+    </nav>
+  </Header>
+  <div class="container team">
+    <h1 class="h1 team">Team</h1>
     <section class="content-section">
       <div class="text-content">
         <h2>Bon Seck - CEO</h2>
-        <img src="img/bon-seck-CEO.jpeg" alt="bon seck photo of ceo" class="u-max-full-width">
-        <p>Bon Seck is a 45-year-old tradesperson who enjoys cycling, bargain hunting and photgraphing bus stops. He started studying chemistry at college but never finished the course. </p>
-        <p> Bon grew up in a working class neighbourhood. He was raised by his mother, his father having left when he was young. He is currently in a relationship with Leona Adele Lambert. Leona is 17 years older than him and works as an English teacher.</p> 
+        <img src="img/bon-seck-CEO.jpeg" alt="bon seck photo of ceo">
+        <p>Bon Seck is a 45-year-old tradesperson who enjoys cycling, bargain hunting and photgraphing bus stops. He
+          started studying chemistry at college but never finished the course. </p>
+        <p> Bon grew up in a working class neighbourhood. He was raised by his mother, his father having left when he
+          was young. He is currently in a relationship with Leona Adele Lambert. Leona is 17 years older than him and
+          works as an English teacher.</p>
       </div>
     </section>
     <section class="content-section">
       <div class="text-content">
         <h2>Jess Seck - CTO</h2>
-        <img src="img/jess-seck-CTO.jpeg" alt="bon seck photo of ceo" class="u-max-full-width">
-        <p>Jess Seck is a 45-year-old tradesperson who enjoys photography, football and playing card games. She is British. She has a post-graduate degree. She is short with brown skin, brown hair and black eyes. </p>
-        <p>She is currently single. Her most recent romance was with a journalist named Bridget Merilyn Brown, who was 1 years older than her. They broke up because Bridget wanted a quieter life than Jess could provide.</p>
+        <img src="img/jess-seck-CTO.jpeg" alt="bon seck photo of ceo">
+        <p>Jess Seck is a 45-year-old tradesperson who enjoys photography, football and playing card games. She is
+          British. She has a post-graduate degree. She is short with brown skin, brown hair and black eyes. </p>
+        <p>She is currently single. Her most recent romance was with a journalist named Bridget Merilyn Brown, who was 1
+          years older than her. They broke up because Bridget wanted a quieter life than Jess could provide.</p>
       </div>
     </section>
     <section class="content-section">
       <div class="text-content">
         <h2>Bogden Worjski - Backend Engineer</h2>
-        <img src="img/bogden-worjski--bckendev.jpeg" alt="bogden worjski photo of backend engineer" class="u-max-full-width">
-        <p>Bogden Worjski is a 30-year-old middle manager who enjoys cookery, working on cars and golf. He is British. He has a post-graduate degree in business studies. He has a severe phobia of cats.</p>
-        <p>Bogden's best friend is a middle manager called Emmeline Hawkins. They get on well most of the time. He also hangs around with Cathleen Walker and Sandy Ross. They enjoy playing card games together.</p> 
+        <img src="img/bogden-worjski--bckendev.jpeg" alt="bogden worjski photo of backend engineer">
+        <p>Bogden Worjski is a 30-year-old middle manager who enjoys cookery, working on cars and golf. He is British.
+          He has a post-graduate degree in business studies. He has a severe phobia of cats.</p>
+        <p>Bogden's best friend is a middle manager called Emmeline Hawkins. They get on well most of the time. He also
+          hangs around with Cathleen Walker and Sandy Ross. They enjoy playing card games together.</p>
       </div>
     </section>
     <section class="content-section">
       <div class="text-content">
         <h2>Saraah Kompt - Project Manager</h2>
-        <img src="img/saraah-kompt-prjmgr.jpeg" alt="saraah kompt photo of project manager" class="u-max-full-width">
-        <p>Saraah Kompt is a 24-year-old chemistry student who enjoys golf, escapology and extreme ironing. She is addicted to shopping, something which her friend Janessa Inez Emmanuel pointed out when she was 18. The problem intensified in 2016. In 2019, Saraah lost her job as a junior scientific researcher as a result of her addiction.</p>
-        <p>Saraah's best friend is a chemistry student named Janessa Emmanuel. They are inseparable. She also hangs around with Enid Layton and Thatcher Chandler. They enjoy watching YouTube videos together.</p> 
+        <img src="img/saraah-kompt-prjmgr.jpeg" alt="saraah kompt photo of project manager">
+        <p>Saraah Kompt is a 24-year-old chemistry student who enjoys golf, escapology and extreme ironing. She is
+          addicted to shopping, something which her friend Janessa Inez Emmanuel pointed out when she was 18. The
+          problem intensified in 2016. In 2019, Saraah lost her job as a junior scientific researcher as a result of her
+          addiction.</p>
+        <p>Saraah's best friend is a chemistry student named Janessa Emmanuel. They are inseparable. She also hangs
+          around with Enid Layton and Thatcher Chandler. They enjoy watching YouTube videos together.</p>
       </div>
     </section>
-    <section class="content-section">
-      <div class="text-content">
-        <h2>Bon Seck - CEO</h2>
-        <img src="img/bon-seck-CEO.jpeg" alt="bon seck photo of ceo" class="u-max-full-width">
-        <p>Bon Seck is a 45-year-old tradesperson who enjoys cycling, bargain hunting and photgraphing bus stops. He started studying chemistry at college but never finished the course. </p>
-        <p> Bon grew up in a working class neighbourhood. He was raised by his mother, his father having left when he was young. He is currently in a relationship with Leona Adele Lambert. Leona is 17 years older than him and works as an English teacher.</p> 
-      </div>
-    </section>
+
+        <!-- Footer -->
+    <footer>
+      <section>
+        <div>
+          <section id="footer-adress">
+            <span class="fa-stack fa-sm">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              LifeGPA LLC<br>
+              1690 Getter Lane<br>
+              Charlotte, NC 28202
+            </p>
+          </section>
+        </div>
+        <div>
+          <section>
+            <span class="fa-stack fa-sm">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              <a href="#">@LifeGPA</a><br>
+              <a href="#">linkedin.com/LifeGPA</a><br>
+              <a href="#">facebook.com/LifeGPA</a>
+            </p>
+          </section>
+        </div>
+        <div>
+          <section>
+            <span class="fa-stack fa-sm">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              <a href="#">info@lifegpa.com</a>
+            </p>
+          </section>
+        </div>
+        <div>
+          <section id="footer-phone">
+            <span class="fa-stack fa-sm">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
+            </span>
+            <p>
+              (704) 555-3242
+            </p>
+          </section>
+        </div>
+      </section>
+    </footer>
   </div>
 </body>
+
 </html>

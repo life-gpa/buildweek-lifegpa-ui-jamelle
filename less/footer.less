@@ -1,0 +1,63 @@
+footer {
+  margin-top: 3rem;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px groove @primary-grey;
+  padding-top: 25px;
+  font-size: smaller;
+
+  div {
+    .flex(flex-start; center);
+    flex-direction: column;
+    color: @primary-grey;
+
+    p {
+      display: inline-flex;
+
+      a {
+        display: contents;
+        color: @primary-grey;
+      }
+    }
+  }
+}
+
+
+@media @desktop, @tablet {
+  footer {
+    margin-top: 100px;
+    width: unset;
+    margin-left: unset;
+    margin-right: unset;
+
+    section {
+      .flex(flex-start, space-between);
+      flex-direction: row;
+
+      div section {
+        .flex(flex-start; space-between);
+        padding: 0 10px;
+        color: @primary-grey;
+
+        p a {
+          color: @primary-grey;
+        }
+      }
+    }
+  }
+}
+
+@media @desktop {
+  
+  #footer-phone {
+    display: initial;
+  }
+}
+
+@media @tablet {
+  
+  #footer-phone {
+    display: none;
+  }
+}

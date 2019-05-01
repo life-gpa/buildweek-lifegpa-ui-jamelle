@@ -4,6 +4,8 @@ html { font-size: 62.5%; }
 
 p { margin-top: 0; }
 
+img { .u-max-full-width(); }
+
 html, body {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
@@ -15,11 +17,11 @@ html, body {
   max-width: 100%;
   width: 335px;
   margin: 0 auto;
-  // padding: 0 20px;
+  color: @primary-grey;
 
   @media @tablet { max-width: 100%; width: 650px; margin: 0 auto; }
 
-  @media @desktop { max-width: 100%; width: 900px; margin: 0 auto; }
+  @media @desktop { max-width: 100%; width: 800px; margin: 0 auto; }
 }
 
 h1, h2, h3, h4 { margin-top: 0; margin-bottom: 2rem; }
@@ -59,25 +61,19 @@ ol ul {
   font-size: 90%;
 }
 
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; 
-  margin-top: 1em;
-}
+.team { 
+  margin-top: 2rem;
 
-/* Find a home for respnsive button, also use something better
- * than an ID
-*/
+  &:first-child {
+  color: @primary-red;
+  }
 
-#buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0 2em;
-  margin-top: 1em;
+  .content-section {
+    margin-top: 3rem;
+    color: @primary-grey;
 
-  @media @tablet {
-    padding: 0 10rem;
-    // margin: 0 1em;
+    h2 {
+      margin-bottom: unset;
+    }
   }
 }

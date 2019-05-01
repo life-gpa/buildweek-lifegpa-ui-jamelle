@@ -1,19 +1,81 @@
 /* Header (mobile-first design) */
-header {
+// header {
 
   /* Header Navigation Bar (mobile-first design) */
-  nav {
-    margin: .8em 0;
-  }
+  // nav {
+  //   margin: .8em 0;
+  // }
 
   /* Header Unordered List(mobile-first design) */
-  ul {
-    .flex(center; space-between);
-    padding: unset;
-  }
+  // ul {
+  //   .flex(center; space-around);
+  //   padding: unset;
+  // }
 
   /* Header List Items (mobile-first design) */
-  li {
+//   li {
     
+//   }
+// }
+
+.navBar {
+  background-color: @primary-red;
+  overflow: hidden;
+
+  @media @tablet {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  a {
+    float: left;
+    color: @primary-white;
+    padding: 1rem;
+    // padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+
+    &:hover, &:active {
+      background-color: @primary-white;
+      color: @primary-red;
+    }
+
+    &:not(:first-child) {
+      display: none;
+    }
+
+    @media @tablet {
+
+      &:not(:first-child) {
+      display: inherit;
+      }
+    }
+  }
+
+  a.icon {
+    display: block;
+    float: right;
+    
+    @media @tablet {
+      display: none;
+    }
   }
 }
+
+.navBar.responsive {
+  position: relative;
+}
+
+.navBar.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.navBar.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
