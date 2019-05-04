@@ -439,23 +439,11 @@ ol ul {
 /* Color Assignments */
 /* Colors */
 /* Home Page Design */
-.home {
-  /* Main (mobile-first design) */
-}
-.home main .logo {
+.home .logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-}
-.home main h1 {
-  color: #464646;
-}
-.home main p {
-  color: #464646;
-}
-.home section p {
-  color: #464646;
 }
 /* Header (mobile-first design) */
 /* Header Navigation Bar (mobile-first design) */
@@ -602,6 +590,47 @@ textarea:focus,
 select:focus {
   border: 1px solid #a0001e;
   outline: 0;
+}
+.articles {
+  margin-top: 95px;
+}
+.article {
+  margin: 20px 0;
+  padding: 0 20px 25px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  height: 4rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+.article h2 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0px 0 0;
+}
+.article .date {
+  margin: 0;
+  font-size: 1rem;
+}
+.article .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.article .expandButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 12px;
+  color: grey;
+  cursor: pointer;
+  transform: translate(-50%);
+  background-color: white;
+}
+.article-open {
+  height: 400px;
 }
 footer {
   margin-top: 3rem;
