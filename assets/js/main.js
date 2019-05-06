@@ -6,12 +6,3 @@ function openDrawerMenu() {
     x.className = "navBar";
   }
 }
-
-let headerElement = document.querySelector('header')
-
-window.onresize = function () {
-  if (window.innerWidth ) {
-    
-  }
-  
-}

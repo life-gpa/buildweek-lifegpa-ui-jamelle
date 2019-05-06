@@ -420,19 +420,6 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%;
 }
-.team {
-  margin-top: 2rem;
-}
-.team:first-child {
-  color: #a0001e;
-}
-.team .content-section {
-  margin-top: 3rem;
-  color: #464646;
-}
-.team .content-section h2 {
-  margin-bottom: unset;
-}
 /* Flex node*/
 /* Use full width */
 /* BreakPoints */
@@ -445,10 +432,6 @@ ol ul {
   align-items: center;
   flex-direction: column;
 }
-/* Header (mobile-first design) */
-/* Header Navigation Bar (mobile-first design) */
-/* Header Unordered List(mobile-first design) */
-/* Header List Items (mobile-first design) */
 .navBar {
   background-color: #a0001e;
   overflow: hidden;
@@ -545,7 +528,7 @@ input[type="submit"]:focus {
   background-color: #f3f3f3;
   border-color: #a0001e;
 }
-#buttons {
+#cta {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -553,7 +536,7 @@ input[type="submit"]:focus {
   margin-top: 2em;
 }
 @media (min-width: 625px) {
-  #buttons {
+  #cta {
     padding: 0 10rem;
   }
 }
@@ -688,4 +671,21 @@ footer div p a {
   #footer-phone {
     display: none;
   }
+}
+.team {
+  margin-top: 2rem;
+}
+.team:first-child {
+  color: #a0001e;
+}
+.team .content-section {
+  margin-top: 3rem;
+  color: #464646;
+}
+.team .content-section h2 {
+  margin-bottom: unset;
+}
+.team .content-section img {
+  border-radius: 50px;
+  margin-bottom: 25px;
 }
